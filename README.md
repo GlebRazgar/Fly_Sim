@@ -1,6 +1,10 @@
 # Fly_Sim
 Simulating fruit-fly drosophilia from first principles
 
+[![nature](https://img.shields.io/badge/publication-8A2BE2)][paper]
+
+<img src="fly-white.png" width="65%">
+
 ## 🎯 Overview
 
 This project implements the first full brain-body upload of the fruit-fly, incorporating:
@@ -8,9 +12,6 @@ This project implements the first full brain-body upload of the fruit-fly, incor
 - **🦴 Body Physics**: MuJoCo-based biomechanical simulation  
 - **🌍 Environment**: Interactive environmental responses
 - **🔬 Data Integration**: Real connectome data and experimental validation
-[![nature](https://img.shields.io/badge/publication-8A2BE2)][paper]
-
-<img src="fly-white.png" width="65%">
 
 `flybody` is an anatomically-detailed body model of the fruit fly [_Drosophila melanogaster_][drosophila_wikipedia] for [MuJoCo][mujoco] physics simulator and reinforcement learning applications. 
 
