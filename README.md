@@ -11,8 +11,6 @@ This project implements the first full brain-body upload of the fruit-fly, incor
 - **🌍 Environment**: Interactive environmental responses
 - **🔬 Data Integration**: Real connectome data and experimental validation
 
-`flybody` is an anatomically-detailed body model of the fruit fly [_Drosophila melanogaster_][drosophila_wikipedia] for [MuJoCo][mujoco] physics simulator and reinforcement learning applications. 
-
 
 ## Getting Started
 
