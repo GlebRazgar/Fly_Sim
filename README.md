@@ -1,20 +1,19 @@
-# `flybody`: fruit fly body model for MuJoCo physics
+# Fly_Sim
+Simulating fruit-fly drosophilia from first principles
 
+## 🎯 Overview
 
+This project implements the first full brain-body upload of the fruit-fly, incorporating:
+- **🧠 Neural Connectome**: Structural and functional brain modeling
+- **🦴 Body Physics**: MuJoCo-based biomechanical simulation  
+- **🌍 Environment**: Interactive environmental responses
+- **🔬 Data Integration**: Real connectome data and experimental validation
 [![nature](https://img.shields.io/badge/publication-8A2BE2)][paper]
 
 <img src="fly-white.png" width="65%">
 
-![pytest workflow](https://github.com/TuragaLab/flybody/actions/workflows/pytest.yml/badge.svg)
-![python versions](https://github.com/TuragaLab/flybody/actions/workflows/pyversions.yml/badge.svg)
-![lint](https://github.com/TuragaLab/flybody/actions/workflows/lint.yml/badge.svg)
-![tf](https://github.com/TuragaLab/flybody/actions/workflows/tf-test.yml/badge.svg)
-
 `flybody` is an anatomically-detailed body model of the fruit fly [_Drosophila melanogaster_][drosophila_wikipedia] for [MuJoCo][mujoco] physics simulator and reinforcement learning applications. 
 
-The fly model was developed in a collaborative effort by Google DeepMind and HHMI Janelia Research Campus. 
-
-We envision our model as a platform for fruit fly biophysics simulations and for modeling neural control of sensorimotor behavior in an embodied context; see our accompanying [publication][paper].
 
 ## Getting Started
 
@@ -43,24 +42,7 @@ mediapy.show_image(pixels)
 
 The quickest way to get started with `flybody` is to take a look at a [tutorial notebook][tutorial] or [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)][tutorial-colab].
 
-Also, [this notebook][envs] shows examples of the flight, walking, and vision-guided flight RL task environments. 
-
-To train the fly, try the [distributed RL training script][ray-script], which uses [Ray][ray] to parallelize the [DMPO][dmpo] agent training.
-
-[fly-home]: https://github.com/TuragaLab/flybody/tree/main/flybody/fruitfly/assets
-[drosophila_wikipedia]: https://en.wikipedia.org/wiki/Drosophila_melanogaster
-[mujoco]: https://github.com/google-deepmind/mujoco
-[tutorial]: https://github.com/TuragaLab/flybody/blob/main/docs/getting-started.ipynb
-[tutorial-colab]: https://colab.research.google.com/github/TuragaLab/flybody/blob/main/docs/getting-started.ipynb
-[dmpo]: https://github.com/google-deepmind/acme/tree/master/acme/agents/tf/dmpo
-[envs]: https://github.com/TuragaLab/flybody/blob/main/docs/fly-env-examples.ipynb
-[ray-script]: https://github.com/TuragaLab/flybody/blob/main/flybody/train_dmpo_ray.py
-[paper]: https://www.nature.com/articles/s41586-025-09029-4
-[preprint]: https://www.biorxiv.org/content/10.1101/2024.03.11.584515v2
-[ray]: https://github.com/ray-project/ray
-[tf]: https://github.com/tensorflow/tensorflow
-[acme]: https://github.com/google-deepmind/acme
-[mujoco-rendering]: https://github.com/google-deepmind/dm_control/tree/main?tab=readme-ov-file#rendering
+Also, [this notebook][envs] shows examples of the flight, walking, and vision-guided flight RL task environments designed by Deepmind. 
 
 ## Installation
 
@@ -70,7 +52,7 @@ Follow these steps to install `flybody`:
 
 1. Clone this repo and create a new conda environment:
    ```bash
-   git clone https://github.com/TuragaLab/flybody.git
+   git clone "link to repo"
    cd flybody
    conda create --name fly_sim_env -c conda-forge python=3.10 pip ipython cudatoolkit=11.8.0
    conda activate fly_sim_env
