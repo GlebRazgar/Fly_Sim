@@ -1,8 +1,6 @@
 # Fly_Sim
 Simulating fruit-fly drosophilia from first principles
 
-[![nature](https://img.shields.io/badge/publication-8A2BE2)][paper]
-
 <img src="fly-white.png" width="65%">
 
 ## 🎯 Overview
